@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.App {
+}
+
+.site-header{
+  background-color: white;
+  color: black;
+  /* background-image: url("./assets/background.jpg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: sticky;
+  z-index: 100;
+  /* border-radius: 0px 0px 20px 20px; */
+  /* margin: 8px; */
+  /* top: 8px;  */
+  top: 0px;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.4);
+
+}
+.logo {
+  font-family: "Permanent Marker";
+  text-align: center;
+  /* -webkit-text-stroke: 1px black; */
+  font-size: 40px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+}
+
+.social > a {
+
+  margin: 12px;
+}
+
+.cards-list {
+  padding: 0px;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom)); /* For iPhone X */
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.card {
+  background-color: teal;
+  flex-grow: 1;
+  position: relative;
+  min-height: 10vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  opacity: 1;
+  margin-bottom: 40px;
+  background-color: white;
+  margin: 8px;
+}
+
+.image-card {
+  width: 40%;
+  min-height: 35vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-card-background {
+  /* width: 90%; */
+  /* bottom: 8px; */
+  /* left: 5%;
+  border-radius: 20px; */
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  box-shadow: 30px 10px 30px 0px rgba(1, 1, 1, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  color: white;
+}
+
+.image-card-background > p {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-top: 0px;
+
+  font-family:-apple-system, Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+}
+.image-card-background > h3 {
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+  font-family:"Permanent Marker";
+  font-size: 1rem;
+
+}
+.image-card:hover {
+  width: 100%;
+  min-height: 60vh;
+}
+.card > .textbox {
+  margin: 20px;
+}
+.card > .textbox > p{
+  color: rgb(33, 37, 41);
+  font-family: -apple-system, Roboto, 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  opacity: 0.6;
+
+}
+
+.card > .textbox > h2{
+  font-family:"Permanent Marker";
+  font-size: 2rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+} 
+
+footer{
+  padding: 32px;
+  color:#333;
+  text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  .site-header{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+
+  }
+  footer > p {
+    color: white;
+  }
+  .card{
+    box-shadow: 0px 5px 5px 0px rgba(255, 255,255, 0.1 );
+    background-color: #191919;
+  }
+  .card > .textbox > p{
+    color: white;  
+  }
+  .card > .textbox > h2{
+    color:white;
+  }
+  .image-card-background {
+    /* box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4); */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-card {
+    width: 100%;
+    min-height: 45vh;
+  }
+}
