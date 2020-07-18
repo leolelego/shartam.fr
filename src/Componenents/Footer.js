@@ -5,7 +5,7 @@ function Footer() {
     
     return (
         <footer>
-            <p style={{"font-weight": "bold"}}>© {(new Date().getFullYear())} Shartam.fr </p>
+            <p style={{"font-weight": "bold"}}>© {(new Date().getFullYear())} ShartamAtelier.fr </p>
             <p style={{"padding":"8px"}}>
               Made with  
               <span role="img" aria-label="love" > ❤ </span>
