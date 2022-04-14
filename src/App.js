@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Componenents/Header'
 import Social from './Componenents/Social'
 import Introduction from './Componenents/Introduction'
-import Event from './Componenents/Event'
+// import Event from './Componenents/Event'
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Gallery from './Componenents/Gallery';
 import Contact from './Componenents/Contact';
@@ -18,7 +18,7 @@ function App() {
       <Social />
 
       <div className="cards-list">
-         {/*<Event /> */}
+         {/*<Event />*/}
 
         <Introduction />
         <Gallery />
