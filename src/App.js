@@ -18,7 +18,7 @@ function App() {
       <Social />
 
       <div className="cards-list">
-         {/*<Event />*/}
+         {/*<Event /> */}
 
         <Introduction />
         <Gallery />
